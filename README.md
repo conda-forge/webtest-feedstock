@@ -1,7 +1,7 @@
 About webtest
 =============
 
-Home: http://webtest.pythonpaste.org/
+Home: https://docs.pylonsproject.org/projects/webtest/en/latest/
 
 Package license: MIT
 
