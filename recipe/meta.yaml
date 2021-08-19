@@ -17,12 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - beautifulsoup4
-    - python
-    - setuptools
-    - six
+    - python >=3.6
     - waitress >=0.8.5
     - webob >=1.2
 
@@ -31,7 +29,7 @@ test:
     - webtest
 
 about:
-  home: http://webtest.pythonpaste.org/
+  home: https://docs.pylonsproject.org/projects/webtest/en/latest/
   license: MIT
   license_file: license.rst
   summary: helper to test WSGI applications
