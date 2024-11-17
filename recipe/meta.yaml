@@ -1,12 +1,14 @@
 {% set name = "WebTest" %}
 {% set version = "3.0.1" %}
 
+{% set python_min = "3.7" %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: 493b5c802f8948a65b5e3a1ad5b2524ee5e1ab60cd713d9a3da3b8da082c06fe
 
 build:
@@ -17,16 +19,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
     - beautifulsoup4
-    - python >=3.6
+    - python >={{ python_min }}
     - waitress >=0.8.5
     - webob >=1.2
 
 test:
   imports:
     - webtest
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://docs.pylonsproject.org/projects/webtest/en/latest/
