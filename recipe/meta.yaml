@@ -1,5 +1,5 @@
 {% set name = "WebTest" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 {% set python_min = "3.7" %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 493b5c802f8948a65b5e3a1ad5b2524ee5e1ab60cd713d9a3da3b8da082c06fe
+  sha256: 0b2de681c16f57b31da5cce6e94ff03cdc77bd86c37a57ba0ee27fed8e065ceb
 
 build:
   number: 0
