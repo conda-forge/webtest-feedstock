@@ -24,7 +24,7 @@ requirements:
   run:
     - beautifulsoup4
     - python >={{ python_min }}
-    - waitress >=0.8.5
+    - waitress >=3.0.2
     - webob >=1.2
 
 test:
