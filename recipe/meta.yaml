@@ -28,10 +28,13 @@ requirements:
     - webob >=1.2
 
 test:
+  commands:
+    - pip check
   imports:
     - webtest
   requires:
     - python {{ python_min }}
+    - pip
 
 about:
   home: https://docs.pylonsproject.org/projects/webtest/en/latest/
